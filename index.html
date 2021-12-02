@@ -1,8 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head></head>
-  <body></body>
-  
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Povrsina Valjka</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+        }
+
+        .box {
+            margin: 200px auto;
+            text-align: center;
+            opacity: 1;
+            width: 800px;
+            height: 600px;
+            color: #130e0e;
+            background-color: bisque;
+            border-radius: 10%;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 id="res">Povrsina Valjka</h1>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var r = prompt("Unestite poluprecnik valjka");
+        var H = prompt("Unesite visinu ");
+        var π = 3.14;
+        let V = result(r, H, π);
+      //  alert("povrsina valjka je : " + V);
+
+        function result(r, H) {
+            return parseInt(r) * parseInt(r) * parseInt(H) * π;
+        }
+        var x = document.getElementById("res");
+        x.innerHTML = "Povrsina valjka je : " + V;
+
+
+
+
+    </script>
+</body>
 
 </html>
